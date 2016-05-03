@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="greatwall">
+    <meta name="author" content="Friend">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>我的订单</title>
+    <link rel="stylesheet" href="../../css/wxui.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/wxApp.css"/>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="content">
+        <div id="personimg">
+            <!-- 个人信息、头像 -->
+            <div class="jumbotron">
+                <h4 class="text-center"><span>新机仓，让生活更方便</span></h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="liucheng">
+                            <img src="../../img/headimg.png" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="orderinfo">
+            <!-- 订单已完成、待付款 -->
+            <div class="ui-tab" id="tab">
+                <ul class="ui-tab-nav ui-border-b">
+                    <li class="current">未完成</li>
+                    <li>已完成</li>
+                </ul>
+                <ul class="ui-tab-content">
+                    <li>
+                        <div id="nowell">
+                            <ul class="ui-list ui-list-pure ui-border-tb">
+                                <li class="ui-border-t">
+                                    <h5 data-link="orderinfo-Already.html" class="orderinfo">
+                                        <strong>订单编号： </strong><strong> 123456789</strong>
+                                        <strong class="pull-right">已下单</strong>
+                                    </h5>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../../img/order.png" alt="..."
+                                                     style="width:80px;">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6>型号：iphone6s Plus</h6>
+                                            <h6>日期：2015-03-16</h6>
+                                            <h6>报价：￥1600</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ui-border-t">
+                                    <h5 data-link="orderinfo-Detection.html" class="orderinfo">
+                                        <strong>订单编号： </strong><strong> 123456789</strong>
+                                        <strong class="pull-right">检测中</strong>
+                                    </h5>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../../img/order.png" alt="..."
+                                                     style="width:80px;">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6>型号：iphone6s Plus</h6>
+                                            <h6>日期：2015-03-16</h6>
+                                            <h6>报价：￥1600</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ui-border-t">
+                                    <h5 data-link="orderinfo-Pendingpay.html" class="orderinfo">
+                                        <strong>订单编号： </strong><strong> 123456789</strong>
+                                        <strong class="pull-right">待付款</strong>
+                                    </h5>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../../img/order.png" alt="..."
+                                                     style="width:80px;">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6>型号：iphone6s Plus</h6>
+                                            <h6>日期：2015-03-16</h6>
+                                            <h6>报价：￥1600
+                                                <input class="btn btn-danger btn-xs btn-outline pull-right paymoney"
+                                                       type="button" value="付款" data-link="orderinfo-Pendingpay.html">
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ui-border-t">
+                                    <h5 data-link="orderinfo-Repair.html" class="orderinfo">
+                                        <strong>订单编号： </strong><strong> 123456789</strong>
+                                        <strong class="pull-right">维修中</strong>
+                                    </h5>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../../img/order.png" alt="..."
+                                                     style="width:80px;">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6>型号：iphone6s Plus</h6>
+                                            <h6>日期：2015-03-16</h6>
+                                            <h6>报价：￥1600</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="well">
+                            <ul class="ui-list ui-list-pure ui-border-tb">
+                                <li class="ui-border-t">
+                                    <h5 data-link="orderinfo-Return.html" class="orderinfo">
+                                        <strong>订单编号： </strong><strong> 123456789</strong>
+                                        <strong class="pull-right">已寄回</strong>
+                                    </h5>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../../img/order.png" alt="..."
+                                                     style="width:80px;">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6>型号：iphone6s Plus</h6>
+                                            <h6>日期：2015-03-16</h6>
+                                            <h6>报价：￥1600</h6>
+                                        </div>
+                                        <div class="media-right">
+                                            <a href="#">
+                                                <img class="media-object" src="../../img/orderok.png" alt="..."
+                                                     width="50px" style="margin-top: 1em;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="ui-border-t">
+                                    <h5 data-link="orderinfo-Return.html" class="orderinfo">
+                                        <strong>订单编号： </strong><strong> 123456789</strong>
+                                        <strong class="pull-right">已寄回</strong>
+                                    </h5>
+                                    <hr>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <a href="#">
+                                                <img class="media-object" src="../../img/order.png" alt="..."
+                                                     style="width:80px;">
+                                            </a>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6>型号：iphone6s Plus</h6>
+                                            <h6>日期：2015-03-16</h6>
+                                            <h6>报价：￥1600</h6>
+                                        </div>
+                                        <div class="media-right">
+                                            <a href="#">
+                                                <img class="media-object" src="../../img/orderok.png" alt="..."
+                                                     width="50px" style="margin-top: 1em;">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="ui-footer ui-footer-stable ui-border-t">
+        <ul class="ui-tiled">
+            <li class="repairbtn" data-link="../../index.html"><a><img src="../../img/repairbtn.png"><br><i>维修</i></a>
+            </li>
+            <li class="personbtn" data-link="../personalinfo.html"><a><img src="../../img/personbtn.png"><br><i>个人中心</i></a>
+            </li>
+        </ul>
+    </footer>
+</div>
+</body>
+<script src="../../js/zepto.min.js"></script>
+<script src="../../js/wxui.min.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script>
+    (function () {
+        var tab = new fz.Scroll('#tab', {
+            role: 'tab',
+            autoplay: false,
+            interval: 3000
+        });
+        /* 滑动开始前 */
+        tab.on('beforeScrollStart', function (fromIndex, toIndex) {
+            console.log(fromIndex, toIndex);// from 为当前页，to 为下一页
+        })
+    })();
+    //个人中心
+    $('.personbtn').on('click', function () {
+        if ($(this).data('link')) {
+            location.href = $(this).data('link');
+        }
+    });
+    //维修
+    $('.repairbtn').on('click', function () {
+        if ($(this).data('link')) {
+            location.href = $(this).data('link');
+        }
+    });
+    //付款事件//目前连接指向 orderinfo-Pendingpay.html   实际为 orderinfo.html  orderinfo.html页面根据状态不同显示不同内容
+    $('.paymoney').on('click', function () {
+        location.href = $(this).data('link');
+    });
+    //点击 订单标题  跳转  实际应用根据状态  并且页面内容动态生成
+    $('.orderinfo').on('click', function () {
+        location.href = $(this).data('link');
+    })
+</script>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="greatwall">
+    <meta name="author" content="Friend">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>我的地址</title>
+    <link rel="stylesheet" href="../../css/wxui.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link href="../../css/mobiscroll.css" rel="stylesheet"/>
+    <link href="../../css/mobiscroll_date.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../css/wxApp.css"/>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="content">
+        <form method="post" action="">
+            <!-- 我的地址 -->
+            <div id="addressinfo">
+                <div class="ui-form ui-border-t">
+                    <div class="ui-form-item ui-form-item-show ui-border-b">
+                        <label for="#"><img src="../../img/name.png" height="25px"></label>
+                        <input id="name" type="text" value="" placeholder="姓名">
+                    </div>
+                    <div class="ui-form-item ui-form-item-show ui-border-b">
+                        <label for="#"><img src="../../img/phone.png" height="25px" style="margin-left: 2px;"></label>
+                        <input id='phone' type="text" value="" placeholder="手机/固定电话">
+                    </div>
+                    <div class="ui-form-item ui-form-item-show ui-border-b">
+                        <label for="#"> <img src="../../img/address.png" height="25px"></label>
+                        <input id="area" id="selectarea" type="text" value="" placeholder="请填写省市区">
+                    </div>
+                    <div class="ui-form-item ui-form-item-show ui-border-b">
+                        <label for="#"></label>
+                        <input id='areadetail' type="text" value="" placeholder="请填写街道详细地址">
+                    </div>
+
+                </div>
+            </div>
+            <div id="reservetime">
+                <!-- 预约时间 -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img src="../../img/pretime.png" height="25px"
+                             style="margin-bottom: 5px;margin-right: 10px;"><span
+                            class="text-warning">预约时间</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <input id="visittime" type="text" class="form-control" value="" placeholder="上门时间">
+                    </div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-4">
+                        <input id='shiduan' class="form-control" href="#sdtime"
+                               data-toggle="collapse" placeholder="选择时段" readonly>
+                        <div class="panel-collapse collapse" id="sdtime" aria-expanded="false">
+                            <div class="panel-body">
+                                <label><img src="../../img/nochoose.png" height="14px" style="margin-right: 5px;"><span
+                                        class="small">上午</span></label>
+                                <label><img src="../../img/nochoose.png" height="14px" style="margin-right: 5px;"><span
+                                        class="small">中午</span></label>
+                                <label><img src="../../img/nochoose.png" height="14px" style="margin-right: 5px;"><span
+                                        class="small">下午</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div id="sendinfo">
+            <!-- 寄送流程 -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="text-left text-warning">
+                        <small>免责条款</small>
+                    </p>
+                    <p class="text-left text-info">
+                        <small>寄修流程：</small>
+                    </p>
+                    <div class="divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="liucheng">
+                        <img src="../../img/makeorder.png" alt="...">
+                    </div>
+                    <h5 class="text-center ui-txt-muted">了解详情，微信下单</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="liucheng">
+                        <img src="../../img/takeems.png" alt="...">
+                    </div>
+                    <h5 class="text-center ui-txt-muted">快递上门取件</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="liucheng">
+                        <img src="../../img/evaluate.png" alt="...">
+                    </div>
+                    <h5 class="text-center ui-txt-muted">检测评估</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="liucheng">
+                        <img src="../../img/repair.png" alt="...">
+                    </div>
+                    <h5 class="text-center ui-txt-muted">终端维修</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="liucheng">
+                        <img src="../../img/signoff.png" alt="...">
+                    </div>
+                    <h5 class="text-center ui-txt-muted">用户签收</h5>
+                </div>
+            </div>
+        </div>
+        <div id="function">
+            <section class="ui-container ui-center">
+                <button id="addressok" data-link="../order/orderinfo.html" class="ui-btn-danger ui-btn-lg">提交</button>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="modal bs-modal-lg" tabindex="-1" role="dialog" data-backdrop='static'>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>警告<i class="ui-dialog-close" data-role="button" data-dismiss="modal"></i></p>
+                </div>
+                <div class="modal-body">
+                    <!--错误内容-->
+                    <h6 id="tips"></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/mobiscroll_date.js" charset="gb2312"></script>
+<script src="../../js/mobiscroll.js"></script>
+<script src="../../js/mobiscroll_date.js" charset="gb2312"></script>
+<script>
+    (function () {
+        //显示对话框
+        //$('.ui-actionsheet').addClass('show');
+        //form提交  进行信息合法性验证
+        $('#addressok').on('click', function () {
+            //验证合法性过程。。。在这里简写、可以利用插件。或封装一个简单的验证。借用插件使得网站变得很慢
+            var tiphtm = '';
+            if ($('#name').val() == '') {
+                tiphtm += '<p class="text-warning">请填写姓名</p>';
+                $('#tips').text('请填写姓名');
+                $('.modal').modal('show');
+                return false
+            }
+            if ($('#phone').val() == '') {
+                tiphtm += '<p class="text-warning">请填联系方式</p>';
+                $('#tips').text('请填联系方式');
+                $('.modal').modal('show');
+                return false
+            }
+            if ($('#area').val() == '') {
+                $('#tips').text('请填写省市区');
+                $('.modal').modal('show');
+                return false
+            }
+            if ($('#areadetail').val() == '') {
+                $('#tips').text('请填写详细街道地址');
+                $('.modal').modal('show');
+                return false
+            }
+            if ($('#visittime').val() == '') {
+                $('#tips').text('请选择上门日期');
+                $('.modal').modal('show');
+                return false
+            }
+            if ($('#shiduan').val() == '') {
+                $('#tips').text('请选择时间段');
+                $('.modal').modal('show');
+                return false
+            }
+            location.href = $(this).data('link');
+        });
+        //时间段选择控制
+        $('#sdtime').on('click', 'label', function () {
+            //选中后关闭折叠框 //并将选中的内容填充到文本框//模仿select
+            $(this).siblings().children().attr('src', '../../img/nochoose.png');
+            $(this).children('img').attr('src', '../../img/choose.png');
+            $('#shiduan').val($(this).children('span').text());
+            $('#sdtime').collapse('hide');
+        });
+        //上门日期//也可用直接用  html5  <input type="date" name="/>//体验不好
+        var currYear = new Date();
+        var opt = {};
+        opt.date = {preset: 'date'};
+        opt.datetime = {preset: 'datetime'};
+        opt.time = {preset: 'time'};
+        opt.default = {
+            theme: 'android-ics light', //皮肤样式
+            display: 'modal', //显示方式
+            mode: 'scroller', //日期选择模式
+            dateFormat: 'yyyy-mm-dd',
+            lang: 'zh',
+            startYear: currYear.getFullYear(), //开始年份
+            endYear: currYear.getFullYear() + 10 //结束年份
+        };
+        $("#visittime").mobiscroll($.extend(opt['date'], opt['default']));
+    })();
+</script>
+</html>

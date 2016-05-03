@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="greatwall">
+    <meta name="author" content="Friend">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>我的订单-已寄回</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../css/wxApp.css"/>
+</head>
+<body>
+<div data-role="page" class="container-fluid">
+    <div data-role="content">
+        <div id="orderstatus">
+            <!-- 订单状态-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sui-steps-round steps-round-auto steps-5">
+                                <div class="finished">
+                                    <div class="wrap">
+                                        <div class="round"><img style="height: 18px;" src="../../img/orderalready.png"></div>
+                                        <div class="bar"></div>
+                                    </div>
+                                    <label>已下单</label>
+                                </div>
+                                <div class="finished">
+                                    <div class="wrap">
+                                        <div class="round"><img style="height: 18px;" src="../../img/orderdetetionh.png">
+                                        </div>
+                                        <div class="bar"></div>
+                                    </div>
+                                    <label>检测中</label>
+                                </div>
+                                <div class="finished">
+                                    <div class="wrap">
+                                        <div class="round"><img style="height: 18px;" src="../../img/orderpendingpay.png">
+                                        </div>
+                                        <div class="bar"></div>
+                                    </div>
+                                    <label>待付款</label>
+                                </div>
+                                <div class="finished">
+                                    <div class="wrap">
+                                        <div class="round"><img style="height: 18px;" src="../../img/orderrepairh.png"></div>
+                                        <div class="bar"></div>
+                                    </div>
+                                    <label>维修中</label>
+                                </div>
+                                <div class="finished last">
+                                    <div class="wrap">
+                                        <div class="round"><img style="height: 18px;" src="../../img/orderreturnh.png"></div>
+                                    </div>
+                                    <label>已寄回</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="checkstatus">
+            <!-- 订单状态-->
+            <div class="row">
+                <div class="col-xs-2">
+                    <img src="../../img/checkicon.png" height="40px">
+                </div>
+                <div class="col-xs-6 text-center">
+                    <h4><strong class="text-success">请您注意查收！</strong></h4>
+                </div>
+            </div>
+        </div>
+        <div id="orderdetail">
+            <!-- 订单详细信息 -->
+            <img src="../../img/orderdetail.png" height="30px"
+                 style="margin-right: 10px;padding-bottom: 5px;"><span>订单详情</span>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-condensed">
+                        <tr>
+                            <td>订单号：</td>
+                            <td>123456789</td>
+                        </tr>
+                        <tr>
+                            <td>型号：</td>
+                            <td>iphone4s</td>
+                        </tr>
+                        <tr>
+                            <td>故障：</td>
+                            <td>WIFI+听筒损坏</td>
+                        </tr>
+                        <tr>
+                            <td>订单人：</td>
+                            <td>周晓峰</td>
+                        </tr>
+                        <tr>
+                            <td>地址：</td>
+                            <td>
+                                <label>北京市 海淀区</label><br>
+                                <label>阳刚路7号 一单元501</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>时间：</td>
+                            <td>2016-03-16 10:00-12:00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+        <div id="function">
+            <div class="row">
+                <div class="col-lg-12">
+                    <button data-link="../../index.html" id="goback" class="btn btn-danger btn-lg btn-block">返回
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script>
+    //底部返回导航按钮
+    $('#goback').click(function () {
+            location.href = $(this).data('link');
+    });
+</script>
+</html>

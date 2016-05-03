@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="greatwall">
+    <meta name="author" content="Friend">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>添加地址</title>
+    <link rel="stylesheet" href="../../css/wxui.min.css">
+    <link rel="stylesheet" href="../../css/wxApp.css"/>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="content">
+        <div id="addadress">
+            <!-- 添加地址 -->
+            <div class="ui-form ui-border-t">
+                <form action="#">
+                    <div class="ui-form-item ui-form-item-show ui-border-b">
+                        <label for="#"><img src="../../img/name.png" height="25px" style="margin-top: 10px;"></label>
+                        <input id="name" type="text" value="" placeholder="姓名">
+                    </div>
+                    <div class="ui-form-item ui-form-item-show ui-border-b">
+                        <label for="#"><img src="../../img/phone.png" height="25px"
+                                            style="margin-top: 10px;margin-left: 2px;"></label>
+                        <input id="phone" type="text" value="" placeholder="手机/固定电话">
+                    </div>
+                    <div class="ui-form-item ui-form-item-show ui-border-b">
+                        <label for="#"> <img src="../../img/address.png" height="25px" style="margin-top: 10px;"></label>
+                        <input id="area" type="text" value="" placeholder="请选择">
+                    </div>
+                    <div class="ui-form-item ui-form-item-show ui-border-b">
+                        <label for="#"></label>
+                        <input id="areadetail" type="text" value="" placeholder="请填写街道详细地址">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="function">
+            <!--提交-->
+            <section class="ui-container ui-center">
+                <button id="addressok" data-link="myaddress-add.html" class="ui-btn-danger ui-btn-lg">提交</button>
+            </section>
+        </div>
+    </div>
+</div>
+<div class="ui-dialog">
+    <div class="ui-dialog-cnt">
+        <header class="ui-dialog-hd ui-border-b">
+            <h4>警告<i class="ui-dialog-close" data-role="button"></i></h4>
+        </header>
+        <div class="ui-dialog-bd">
+            <h6 id="tips"></h6>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/zepto.min.js"></script>
+<script src="../../js/wxui.min.js"></script>
+<script>
+    //提交添加地址  信息合法性验证  可以利用插件也可简单的指定规则验证。 建议 自写
+    $('#addressok').on('click', function () {
+        if ($('#name').val() == '') {
+            $('#tips').text('请填写姓名');
+            $(".ui-dialog").dialog("show");
+            return false
+        }
+        if ($('#phone').val() == '') {
+            $('#tips').text('请填联系方式');
+            $(".ui-dialog").dialog("show");
+            return false
+        }
+        if ($('#area').val() == '') {
+            $('#tips').text('请填写省市区');
+            $(".ui-dialog").dialog("show");
+            return false
+        }
+        if ($('#areadetail').val() == '') {
+            $('#tips').text('请填写详细街道地址');
+            $(".ui-dialog").dialog("show");
+            return false
+        }
+        location.href = $(this).data('link');
+    })
+</script>
+</html>

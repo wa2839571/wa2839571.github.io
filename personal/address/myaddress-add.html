@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="greatwall">
+    <meta name="author" content="Friend">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>添加地址</title>
+    <link rel="stylesheet" href="../../css/wxui.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/wxApp.css"/>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="content">
+        <div id="addresslist">
+            <!-- 我的地址列表 -->
+            <ul class="ui-list ui-list-pure ui-border-tb">
+                <li class="ui-border-t">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5>
+                                <small>李晓峰</small>
+                                <small> 123456789</small>
+                            </h5>
+                            <h5>
+                                <small>北京市海淀区阳刚路7号楼一单元502</small>
+                            </h5>
+                            <div class="divider"></div>
+                            <div>
+                                <input class="btn btn-danger btn-outline btn-xs editaddress" data-link="addaddress.html"
+                                       type="button" value="编辑">
+                                <input class="btn btn-danger btn-outline btn-xs deleaddress" type="button" value="删除">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5>
+                                <small>栾富增</small>
+                                <small>010-88867822</small>
+                            </h5>
+                            <h5>
+                                <small>北京市东城区民安小区24号楼9单元901</small>
+                            </h5>
+                            <div class="divider"></div>
+                            <div>
+                                <input class="btn btn-danger btn-outline btn-xs editaddress" data-link="addaddress.html"
+                                       type="button" value="编辑">
+                                <input class="btn btn-danger btn-outline btn-xs deleaddress" type="button" value="删除">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="ui-border-t">
+                    <div class="media">
+                        <div class="media-body">
+                            <h5>
+                                <small>马燕</small>
+                                <small> 1585268698</small>
+                            </h5>
+                            <h5>
+                                <small>北京市东城区民安小区24号楼9单元901</small>
+                            </h5>
+                            <div class="divider"></div>
+                            <div>
+                                <div>
+                                    <input class="btn btn-danger btn-outline btn-xs editaddress"
+                                           data-link="addaddress.html" type="button" value="编辑">
+                                    <input class="btn btn-danger btn-outline btn-xs deleaddress" type="button"
+                                           value="删除">
+                                    <small class="pull-right"><img src="../../img/choose.png"> 默认</small>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="function">
+            <section class="ui-container ui-center">
+                <button id="addresssumbit" data-link="addaddress.html" class="ui-btn-danger ui-btn-lg">添加地址 +</button>
+            </section>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script>
+    //添加地址
+    $('#addresssumbit').on('click', function () {
+        location.href = $(this).data('link');
+    });
+    //编辑地址
+    $('.editaddress').on('click', function () {
+        location.href = $(this).data('link');
+    });
+</script>
+</html>

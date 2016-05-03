@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="greatwall">
+    <meta name="author" content="Friend">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>我的订单-检测中</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../css/wxApp.css"/>
+</head>
+<body>
+<div data-role="page" class="container-fluid">
+    <div data-role="content">
+        <div id="orderstatus">
+            <!-- 订单状态-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sui-steps-round steps-round-auto steps-5">
+                                <div class="finished">
+                                    <div class="wrap">
+                                        <div class="round"><img style="height: 18px;" src="../../img/orderalready.png">
+                                        </div>
+                                        <div class="bar"></div>
+                                    </div>
+                                    <label>已下单</label>
+                                </div>
+                                <div class="current">
+                                    <div class="wrap">
+                                        <div class="round"><img style="height: 18px;" src="../../img/orderplane.png">
+                                        </div>
+                                        <div class="bar"></div>
+                                    </div>
+                                    <label>检测中</label>
+                                </div>
+                                <div class="todo">
+                                    <div class="wrap">
+                                        <div class="round"><img style="height: 18px;"
+                                                                src="../../img/orderpendingpayh.png"></div>
+                                        <div class="bar"></div>
+                                    </div>
+                                    <label>待付款</label>
+                                </div>
+                                <div class="todo">
+                                    <div class="wrap">
+                                        <div class="round"><img style="height: 18px;" src="../../img/orderrepairh.png">
+                                        </div>
+                                        <div class="bar"></div>
+                                    </div>
+                                    <label>维修中</label>
+                                </div>
+                                <div class="todo last">
+                                    <div class="wrap">
+                                        <div class="round"><img style="height: 18px;" src="../../img/orderreturnh.png">
+                                        </div>
+                                    </div>
+                                    <label>已寄回</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="orderdetection">
+            <!--检测信息-->
+            <table class="table table-condensed">
+                <tr>
+                    <td>故障</td>
+                    <td>
+                        <label> 外屏破碎</label>
+                        <div class="divider"></div>
+                        <label> 听筒</label>
+                        <div class="divider"></div>
+                        <label> 信号不稳定</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>检测人</td>
+                    <td>李晓峰</td>
+                </tr>
+                <tr>
+                    <td>检测时间</td>
+                    <td>2016-03-26</td>
+                </tr>
+                <tr>
+                    <td>检测机构</td>
+                    <td>新机仓</td>
+                </tr>
+                <tr>
+                    <td>价格</td>
+                    <td>
+                        ￥500.00
+                    </td>
+                </tr>
+                <tr>
+                    <td>时间</td>
+                    <td>2016-03-16 10:00-12:00</td>
+                </tr>
+            </table>
+        </div>
+        <div id="orderdetail">
+            <!-- 订单信息 -->
+            <img src="../../img/orderdetail.png" height="30px" style="margin-right: 10px;padding-bottom: 5px;"><span>订单信息</span>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-condensed">
+                        <tr>
+                            <td>订单人：</td>
+                            <td>周晓峰</td>
+                        </tr>
+                        <tr>
+                            <td>联系电话：</td>
+                            <td>18045689563</td>
+                        </tr>
+                        <tr>
+                            <td>订单地址：</td>
+                            <td>北京市海淀区幸福花园3单元1012</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</html>

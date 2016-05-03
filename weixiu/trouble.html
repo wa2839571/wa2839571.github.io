@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="greatwall">
+    <meta name="author" content="Friend">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>故障</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../css/wxApp.css"/>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="content">
+        <div id="version" class="troublepanel">
+            <!-- 型号 -->
+            <p>型号</p>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-xs-3 text-center navtab">
+                    <div class="navlist" data-flag="iphone4">
+                        <div class="navlistimg">
+                            <img class="imgsrc" src="../img/huawei.png">
+                        </div>
+                        <h6>iphone4系</h6>
+                    </div>
+                </div>
+                <div class="col-xs-3 text-center navtab">
+                    <div class="navlist" data-flag="iphone5">
+                        <div class="navlistimg">
+                            <img class="imgsrc" src="../img/huawei.png">
+                        </div>
+                        <h6>iphone5系</h6>
+                    </div>
+                </div>
+                <div class="col-xs-3 text-center navtab">
+                    <div class="navlist" data-flag="iphone6">
+                        <div class="navlistimg">
+                            <img class="imgsrc" src="../img/huawei.png">
+                        </div>
+                        <h6>iphone6系</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-shadow"></div>
+            <div class="list-group" style="margin-left: 5px;">
+                <div class="list-group-item" style="padding-left: 0px;">
+                    <div class="row navlistdetail">
+                        <div class="col-xs-3 text-left listdetail">
+                            <img src="../img/choose.png" height="14px">
+                            <span class="small">iphone5s</span>
+                        </div>
+                        <div class="col-xs-3 text-left listdetail">
+                            <img src="../img/nochoose.png" height="14px">
+                            <span class="small">iphone5c</span>
+                        </div>
+                        <div class="col-xs-3 text-left listdetail">
+                            <img src="../img/nochoose.png" height="14px">
+                            <span class="small">iphone5.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="color" class="troublepanel">
+            <!-- 颜色 -->
+            <p>颜色</p>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-xs-2 text-center">
+                    <div class="troublecolor" style="border: 1px solid #d9534f">
+                        <div class="colorcurr" style="background-color:rgba(208,208,212,1);"></div>
+                    </div>
+                    <span class="small">银色</span></div>
+                <div class="col-xs-2 text-center">
+                    <div class="troublecolor">
+                        <div class="colorcurr" style="background-color:rgba(155,155,160,1)"></div>
+                    </div>
+                    <span class="small">深灰</span></div>
+                <div class="col-xs-2 text-center">
+                    <div class="troublecolor">
+                        <div class="colorcurr" style="background-color:rgba(212,187,163,1)"></div>
+                    </div>
+                    <span class="small">金色</span></div>
+                <div class="col-xs-2 text-center">
+                    <div class="troublecolor">
+                        <div class="colorcurr" style="background-color:rgba(208,168,160,1)"></div>
+                    </div>
+                    <span class="small">粉色</span></div>
+                <div class="col-xs-2 text-center">
+                    <div class="troublecolor">
+                        <div class="colorcurr"
+                             style="background-color:rgba(255,255,255,.5); border: 1px solid #ccc;"></div>
+                    </div>
+                    <span class="small">白色</span></div>
+                <div class="col-xs-2 text-center">
+                    <div class="troublecolor">
+                        <div class="colorcurr" style="background-color:rgba(0,0,0,1);"></div>
+                    </div>
+                    <span class="small">黑色</span></div>
+            </div>
+        </div>
+        <div id="fault" class="troublepanel">
+            <!-- 故障 -->
+            <p>故障</p>
+            <div class="divider"></div>
+            <div class="row">
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/openh.png" data-choose="../imgtrouble/open.png">
+                    </div>
+                    <span class="small">无法开机</span>
+                </div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/jinshuih.png" data-choose="../imgtrouble/jinshui.png">
+                    </div>
+                    <span class="small">进水</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/erjih.png" data-choose="../imgtrouble/erji.png">
+                    </div>
+                    <span class="small">耳机孔</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/maikefeng.png" data-choose="../imgtrouble/maikefengh.png">
+                    </div>
+                    <span class="small">麦克风</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/wifi.png" data-choose="../imgtrouble/wifih.png">
+                    </div>
+                    <span class="small">WIFI</span></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/yangshengqih.png" data-choose="../imgtrouble/yangshengqi.png">
+                    </div>
+                    <span class="small">扬声器</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/wuxianlianjieh.png" data-choose="../imgtrouble/wuxianlianjie.png">
+                    </div>
+                    <span class="small">无线连接</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/waipingh.png" data-choose="../imgtrouble/waiping.png">
+                    </div>
+                    <span class="small">外屏破碎</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/dianchih.png" data-choose="../imgtrouble/dianchi.png">
+                    </div>
+                    <span class="small">电池</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/kacaoh.png" data-choose="../imgtrouble/kacao.png">
+                    </div>
+                    <span class="small">卡槽</span></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/anjian.png" data-choose="../imgtrouble/anjianh.png">
+                    </div>
+                    <span class="small">按键失灵</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/shujuxiankouh.png" data-choose="../imgtrouble/shujuxiankou.png">
+                    </div>
+                    <span class="small">电源插口</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/yuanchengh.png" data-choose="../imgtrouble/yuancheng.png">
+                    </div>
+                    <span class="small">远程服务</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/lanyah.png" data-choose="../imgtrouble/lanya.png">
+                    </div>
+                    <span class="small">蓝牙</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/zhubanh.png" data-choose="../imgtrouble/zhuban.png">
+                    </div>
+                    <span class="small">主板</span></div>
+            </div>
+            <div class="row">
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/xinhaoruoh.png" data-choose="../imgtrouble/xinhaoruo.png">
+                    </div>
+                    <span class="small">信号弱</span></div>
+                <div class="col-xs-1-5 text-center">
+                    <div class="falutlist">
+                        <img src="../imgtrouble/fuwufei.png" data-choose="../imgtrouble/fuwufeih.png">
+                    </div>
+                    <span class="small">服务费</span></div>
+            </div>
+            <!--其他故障-->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <p class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#qita"
+                       aria-expanded="true">
+                        <img class="listitemimg" src="../img/nochoose.png" style="margin-right: 5px;"
+                             data-choose="../img/choose.png">
+                        <span>其他</span>
+                        <i class="glyphicon glyphicon-menu-down pull-right"></i>
+                    </p>
+                    <h6 id="qita" class="panel-collapse collapse">
+                        <label><img src="../img/nochoose.png" height="14px" style="margin-right: 5px;"><span
+                                class="small">其他</span></label>
+                    </h6></div>
+                <div class="panel panel-default">
+                    <p class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#waike"
+                       aria-expanded="false">
+                        <img class="listitemimg" src="../img/nochoose.png" style="margin-right: 5px;"
+                             data-choose="../img/choose.png">
+                        <span>外壳</span>
+                        <i class="glyphicon glyphicon-menu-down pull-right"></i>
+                    </p>
+                    <h6 id="waike" class="panel-collapse collapse">
+                        <label><img src="../img/nochoose.png" height="14px" style="margin-right: 5px;"><span
+                                class="small">外壳</span></label>
+                    </h6></div>
+                <div class="panel panel-default">
+                    <p class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#anjian"
+                       aria-expanded="false">
+                        <img class="listitemimg" src="../img/nochoose.png" style="margin-right: 5px;"
+                             data-choose="../img/nochoose.png">
+                        <span>按键失灵</span>
+                        <i class="glyphicon glyphicon-menu-down pull-right"></i>
+                    </p>
+                    <h6 id="anjian" class="panel-collapse collapse">
+                        <label><img src="../img/nochoose.png" height="14px" style="margin-right: 5px;"><span
+                                class="small">音量键、静音键</span></label>
+                        <label><img src="../img/nochoose.png" height="14px" style="margin-right: 5px;"><span
+                                class="small">电源开关键</span></label>
+                        <label><img src="../img/nochoose.png" height="14px" style="margin-right: 5px;"><span
+                                class="small">HOME键</span></label>
+                    </h6></div>
+                <div class="panel panel-default">
+                    <p class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#shexiang"
+                       aria-expanded="true">
+                        <img class="listitemimg" src="../img/nochoose.png" style="margin-right: 5px;"
+                             data-choose="../img/choose.png">
+                        <span>摄像头</span>
+                        <i class="glyphicon glyphicon-menu-down pull-right"></i>
+                    </p>
+                    <h6 id="shexiang" class="panel-collapse collapse">
+                        <label><img src="../img/nochoose.png" height="14px" style="margin-right: 5px;"><span
+                                class="small">摄像头</span></label>
+                    </h6></div>
+                <div class="panel panel-default">
+                    <p class="list-group-item" data-toggle="collapse" data-parent="#accordion" href="#ganying"
+                       aria-expanded="true">
+                        <img class="listitemimg" src="../img/nochoose.png" style="margin-right: 5px;"
+                             data-choose="../img/choose.png">
+                        <span>感应功能</span>
+                        <i class="glyphicon glyphicon-menu-down pull-right"></i>
+                    </p>
+                    <h6 id="ganying" class="panel-collapse collapse">
+                        <label><img src="../img/nochoose.png" height="14px" style="margin-right: 5px;"><span
+                                class="small">感应</span></label>
+                    </h6></div>
+            </div>
+        </div>
+        <footer class="ui-footer ui-footer-stable ui-border-t">
+            <ul class="ui-tiled searchbtn">
+                <li><a><span style="font-size: large;">查询报价</span></a></li>
+            </ul>
+        </footer>
+    </div>
+</div>
+<div class="modal bs-modal-lg" tabindex="-1" role="dialog" data-backdrop='static'>
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="pull-left">报价</span>
+                    <img class="pull-right" src="../img/close.png" height="20px" data-dismiss="modal">
+                </div>
+                <div class="modal-body">
+                    <!--报价内容-->
+                    <p>
+                        <span class="reddot"></span>
+                        <small class="smallhot">麦克风:￥80.00</small>
+                    </p>
+                    <p>
+                        <span class="reddot"></span>
+                        <small class="smallhot">WIFI:￥50.00</small>
+                    </p>
+                    <p>
+                        <span class="reddot"></span>
+                        <small class="smallhot">按键失灵:￥200.00</small>
+                    </p>
+                    <p>
+                        <span class="reddot"></span>
+                        <small class="smallhot">远程服务费:￥50.00</small>
+                    </p>
+                    <p>
+                        <span class="reddot"></span>
+                        <small class="smallhot">服务费:￥30.00</small>
+                    </p>
+                    <div class="divider"></div>
+                    <h6>参考价：<strong class="badge">￥410</strong></h6>
+                    <h6 class="text-warning">温馨提示具体报价待检测评估后确定</h6>
+                </div>
+                <div class="modal-footer">
+                    <button id="priceok" type="button" class="btn btn-danger btn-block" data-link="../personal/address/myaddress.html"
+                            data-dismiss="modal">确定
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+    (function () {
+        //针对不同屏幕  保证图片显示区域为正方形
+        $('.navlist').height($('.navlist').width() + 25);
+        $('.navlistimg').height($('.navlist').width());
+        //查询报价
+        $('.searchbtn').on('click', function () {
+            $('.modal').modal('show');
+        });
+        //切换手机系列显示对应的 手机型号
+        $('.navlist').on('click', function () {
+            var flag = $(this).data('flag');
+            var html = '';
+            if (flag === 'iphone4') {
+                html = '<div class="col-xs-3 text-left listdetail">\
+                        <img src="../img/choose.png" height="14px">\
+                        <span class="small">iphone4</span>\
+                        </div>\
+                        <div class="col-xs-3 text-left listdetail">\
+                        <img src="../img/nochoose.png" height="14px">\
+                        <span class="small">iphone4s</span>\
+                        </div>';
+                $('.arrow-shadow').css('left', '12%')
+            }
+            if (flag === 'iphone5') {
+                html = '<div class="col-xs-3 text-left listdetail">\
+                        <img src="../img/choose.png" height="14px">\
+                        <span class="small">iphone5s</span>\
+                        </div>\
+                        <div class="col-xs-3 text-left listdetail">\
+                        <img src="../img/nochoose.png" height="14px">\
+                        <span class="small">iphone5c</span>\
+                        </div>\
+                        <div class="col-xs-3 text-left listdetail">\
+                        <img src="../img/nochoose.png" height="14px">\
+                        <span class="small">iphone5.</span>\
+                        </div>';
+                $('.arrow-shadow').css('left', '37%')
+            }
+            if (flag === 'iphone6') {
+                html = '<div class="col-xs-4 text-left listdetail">\
+                        <img src="../img/choose.png" height="14px">\
+                        <span class="small">iphone6</span>\
+                        </div>\
+                        <div class="col-xs-4 text-left listdetail">\
+                        <img src="../img/nochoose.png" height="14px">\
+                        <span class="small">iphone6 plus</span>\
+                        </div>\
+                        <div class="col-xs-3 text-left listdetail">\
+                        <img src="../img/nochoose.png" height="14px">\
+                        <span class="small">iphone6</span>\
+                        </div>\
+                        <div class="col-xs-4 text-left listdetail">\
+                        <img src="../img/nochoose.png" height="14px">\
+                        <span class="small">iphone6s plus</span>\
+                        </div>';
+                $('.arrow-shadow').css('left', '62%')
+            }
+            $('.navlistdetail').html(html);
+        });
+        //控制  对应手机型号的 选中与否状态
+        $('.navlistdetail').on('click', '.listdetail', function () {
+            $(this).siblings().children().attr('src', '../img/nochoose.png');
+            $(this).children('img').attr('src', '../img/choose.png');
+        });
+        //控制 手机颜色 选中状态与否
+        $('.troublecolor').on('click', function () {
+            $('.troublecolor').css({'border': '1px solid #FFF'});
+            $(this).css({'border': '1px solid #d9534f'});
+        });
+        //控制  手机故障列表  选中状态与否
+        $('.falutlist img').on('click', function () {
+            var thisfalut = $(this).attr('src');
+            var beiyong = $(this).data('choose');
+            $(this).attr('src', beiyong);
+            $(this).data('choose', thisfalut);
+        });
+        //控制  其他故障列表切换时  左侧  上下按钮切换
+        $('#accordion').on('click', '.list-group-item', function () {
+            var obj = $('#accordion .glyphicon');
+            obj.removeClass('glyphicon-menu-up');
+            obj.addClass('glyphicon-menu-down');
+            if ($(this).hasClass('collapsed')) {
+                $(this).children('.glyphicon').addClass('glyphicon-menu-up');
+                $(this).children('.glyphicon').removeClass('glyphicon-menu-down');
+            }
+        });
+        //控制   其他故障列表中   故障的选中状态与否
+        $('#accordion').on('click', 'label', function () {
+            var obj = $(this).find('img');
+            console.log(obj.attr('src'));
+            if (obj.attr('src') == '../img/choose.png') {
+                obj.attr('src', '../img/nochoose.png');
+                obj.attr('flag', 0);
+            } else {
+                obj.attr('src', '../img/choose.png');
+                obj.attr('flag', 1);
+            }
+            if ($(this).parent().find('img[flag=1]').length > 0) {
+                $(this).parent().prev().children('img').attr('src', '../img/choose.png');
+            } else {
+                $(this).parent().prev().children('img').attr('src', '../img/nochoose.png');
+            }
+        });
+        //提交  报价
+        $('#priceok').on('click', function () {
+            //演示用//实际应用时ajax 参数 判断 等
+            location.href = $(this).data('link');
+        })
+    })();
+</script>
+</html>
